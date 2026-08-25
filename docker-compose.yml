@@ -1,21 +1,11 @@
 services:
 
-  user-db:
-    image: postgres:17
-    container_name: user-db
+  msa-chat-service:
+    image: postgres:18
+    container_name: msa-chat-service
     environment:
-      POSTGRES_DB: user_db
+      POSTGRES_DB: postgres
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: msa721
-    ports:
-      - "5432:5432"
-
-  chat-db:
-    image: postgres:17
-    container_name: chat-db
-    environment:
-      POSTGRES_DB: chat_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: msa721
+      POSTGRES_PASSWORD: 3472
     ports:
       - "5433:5432"
