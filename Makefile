@@ -1,11 +1,11 @@
 start:
-	docker compose up -d
+	./scripts/start.sh
 
 stop:
-	docker compose down
+	./scripts/stop.sh
 
 logs:
-	docker compose logs -f
+	./scripts/logs.sh
 
 ps:
-	docker ps
+	./scripts/ps.sh
